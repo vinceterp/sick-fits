@@ -2,6 +2,21 @@ import React from 'react';
 import Nav from './nav.js';
 import styled from 'styled-components';
 import Link from 'next/link';
+import Router from 'next/router';
+import NProgress from 'nprogress';
+
+Router.events.on('routeChangeStart', (url) => {
+  return NProgress.start();
+});
+
+Router.events.on('routeChangeComplete', (url) => {
+  return NProgress.done();
+});
+
+Router.events.on('routeChangeError', (err, url) => {
+  console.log("Router Error Triggered");
+  return NProgress.done();
+});
 
 const Logo = styled.h1`
   font-size: 4rem;
