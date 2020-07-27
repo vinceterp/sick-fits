@@ -1,5 +1,5 @@
 # source: https://us1.prisma.sh/paul-campbell-cde3fb/sickfits/dev
-# timestamp: Sun Jul 05 2020 12:12:15 GMT-0500 (Eastern Standard Time)
+# timestamp: Sat Jul 25 2020 18:03:43 GMT-0500 (Eastern Standard Time)
 
 type AggregateUser {
   count: Int!

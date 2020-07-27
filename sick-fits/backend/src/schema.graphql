@@ -1,7 +1,12 @@
-type Mutation {
-    hi: String
+type Dog{
+    name: String!
+    breed: String!
 }
 
-type Query {
-    hi: String
+type Query{
+    dogs: [Dog]!
+}
+
+type Mutation{
+    hello: String!
 }
